@@ -1,0 +1,12 @@
+# 冒泡排序
+## 定义 冒泡排序是一种简单的通过交换元素消除逆序，实现排序的方法牟其中的基本操作是比较相邻的记录，发现相邻的逆序时，就交换他们，通过反复比较和交换，最终完成整个序列的排序工作 
+## 时间复杂度 O（n^2） 
+```python 
+def func_sort(li): 
+  for x in range(len(li)-1):
+    for y in range(len(li)-1-x): 
+      if li[y] > li[y+1]: 
+        li[y], li[y+1] = li[y+1], li[y] 
+        
+return li 
+```
